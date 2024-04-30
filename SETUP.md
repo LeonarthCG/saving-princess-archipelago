@@ -42,7 +42,7 @@ bspatch original_data.win data.win saving_princess_basepatch.bsdiff4
 
 You can find the template in the [releases tab of my Archipelago fork](https://github.com/LeonarthCG/Archipelago/releases/latest) and manually configure it with your favorite text editor after downloading it.
 
-You can also generate the template through the "Generate Template Options" button of the Archipelago Launcher if you have the [Saving Pricness APWorld](https://github.com/LeonarthCG/Archipelago/releases/latest).
+You can also generate the template through the "Generate Template Options" button of the Archipelago Launcher if you have the [Saving Princess APWorld](https://github.com/LeonarthCG/Archipelago/releases/latest).
 
 ## Joining a MultiWorld Game
 
