@@ -1,29 +1,42 @@
 # Saving Princess Setup Guide
 
-## Required Software
+## Installation Procedures
 
+### Automated Installation
+
+1. Purchase and download [Saving Princess](https://brainos.itch.io/savingprincess)
+2. Download and install the latest [Archipelago release](https://github.com/ArchipelagoMW/Archipelago/releases/latest)
+3. Launch `ArchipelagoLauncher` or `ArchipelagoSavingPrincessClient` from your Archipelago installation folder
+4. If you launched `ArchipelagoLauncher`, click on "Saving Princess Client"
+   * You will probably need to scroll down on the Clients column to see it
+5. Follow the prompts
+   * On Linux, you will need one of either Wine or 7z for the automated installation
+
+Once everything is set up, it is recommended to continue launching the game through this method, as it will check for any updates and automatically apply them.
+
+### Manual Windows Installation
+
+Required software:
 - Saving Princess, found at its [itch.io Store Page](https://brainos.itch.io/savingprincess)
 - `saving_princess_basepatch.bsdiff4` and `gm-apclientpp.dll`, from [saving_princess_archipelago.zip](https://github.com/LeonarthCG/saving-princess-archipelago/releases/latest)
 - Software that can decompress the previous files, such as [7-zip](https://www.7-zip.org/download.html)
 - A way to apply `.bsdiff4` patches, such as [bspatch](https://www.romhacking.net/utilities/929/)
 
-## Installation Procedures
+Steps:
+1. Extract all files from `Saving Princess.exe`, as if it were a `.7z` file
+   * Feel free to rename `Saving Princess.exe` to `Saving Princess.exe.7z` if needed
+   * If installed through the itch app, you can find the installation directory from the game's page, pressing the cog button, then "Manage" and finally "Open folder in explorer"
+2. Extract all files from `saving_princess_archipelago.zip` into the same directory as the files extracted in the previous step
+   * This should include, at least, `saving_princess_basepatch.bsdiff4` and `gm-apclientpp.dll`
+3. If you don't have `original_data.win`, copy `data.win` and rename its copy to `original_data.win`
+   * By keeping an unmodified copy of `data.win`, you will have an easier time updating in the future
+4. Apply the `saving_princess_basepatch.bsdiff4` patch using your patching software
+   * If this seems intimidating to you, more details about how to proceed can be found in the troubleshooting section
+5. To launch the game, run `Saving Princess v0_8.exe`
 
-### Windows Setup
+### Manual Linux Installation
 
-1. Extract all files from `Saving Princess.exe`, as if it were a `.7z` file.
-   * Feel free to rename `Saving Princess.exe` to `Saving Princess.exe.7z` if needed.
-   * If installed through the itch app, you can find the installation directory from the game's page, pressing the cog button, then "Manage" and finally "Open folder in explorer".
-2. Extract all files from `saving_princess_archipelago.zip` into the same directory as the files extracted in the previous step.
-   * This should include, at least, `saving_princess_basepatch.bsdiff4` and `gm-apclientpp.dll`.
-3. If you don't have `original_data.win`, copy `data.win` and rename its copy to `original_data.win`.
-   * By keeping an unmodified copy of `data.win`, you will have an easier time updating in the future.
-4. Apply the `saving_princess_basepatch.bsdiff4` patch using your patching software.
-   * If this seems intimidating to you, more details about how to proceed can be found in the troubleshooting section.
-
-### Linux Setup
-
-The game does run mostly well through Wine, so it is possible to play on Linux, although there are some minor sprite displacement issues from time to time.
+The game does run mostly well through Wine, so it is possible to play on Linux, although there are some minor sprite displacement and sound issues from time to time.
 
 You can follow the instructions for Windows with very few changes:
 
@@ -62,7 +75,7 @@ The game automatically keeps a save file for each seed and slot combination, so 
 
 All that's left is pressing on the button again to start playing. If you are waiting for a countdown, press "NEW GAME" when the countdown finishes.
 
-## Installation Troubleshooting
+## Manual Installation Troubleshooting
 
 ### Can't we just get the patched data.win? / Can I send my friend a patched data.win?
 
